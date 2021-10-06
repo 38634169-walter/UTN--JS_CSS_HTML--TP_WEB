@@ -19,4 +19,4 @@ setInterval(function(){
   cont=0;
   text.innerHTML = "";
   setTimeout(animar,speed);
-},6000);
+},4000);

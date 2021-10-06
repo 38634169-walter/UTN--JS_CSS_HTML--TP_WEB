@@ -6,6 +6,9 @@
 li{
     list-style: none;
 }
+a{
+    text-decoration:none;
+}
 #slider-container{
     width:100%;
     top:0;
@@ -18,9 +21,9 @@ li{
     position:absolute;
     right:0;
     left:0;
-    top:40px;
+    top:2cm;
     text-align:center;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 .slider{
     width:100%;
@@ -43,6 +46,26 @@ li{
     height:10cm;
     background-image: url(imagenes/3.jpg);
     display:none;
+}
+#redes{
+    position:absolute;
+    right:1.5cm;
+    top:7.5cm;
+    display:flex;
+    flex-direction:row;
+}
+#redes>a>i{
+    font-size: 30px;
+    color:white;
+    border:1px solid white;
+    border-radius: 35px;
+    padding:7px;
+    margin:4px;
+    transition: all 1s;
+}
+#redes>a>i:hover{
+    cursor:pointer;
+    transform: scale(1.8);
 }
 #menu{
     width:100%;
@@ -127,10 +150,30 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position:relative;
+}
+#panel1-derecho>li{
+    color:rgb(39, 39, 92);
+    font-size: 200px;
+}
+#panel1-derecho>li>i:nth-child(1){
+    display: block;
+}
+#panel1-derecho>li>i:nth-child(2){
+    display: none;
+}
+#panel1-derecho>li>i:nth-child(3){
+    display: none;
 }
 #panel1-derecho>a{
+    width:4cm;
     background:rgb(24, 24, 80);
     text-decoration:none;
+    position:absolute;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    bottom:2.5cm;
     font-size:20px;
     padding:10px;
     border-radius: 5px;
@@ -158,4 +201,16 @@ li{
 }
 #flecha>i:hover{
     cursor:pointer;
+}
+.hide{
+    color:rgb(39, 39, 92);
+    transition: all 1s;
+}
+.sa{
+    display:none;
+}
+.show{
+    color:green;
+    display:block;
+    transition: all 1s;
 }
