@@ -1,7 +1,6 @@
 $(document).ready(portada);
 
 var posicion=0;
-var cambiar=0;
 var simbolos=0;
 var b=0;
 function portada(){
@@ -13,16 +12,6 @@ function portada(){
         $('.slider').css({'display':'none','transition':'all 1S'});
         $('.slider').eq(posicion).css({'display':'block','transition':'all 1S'});
     }, 2000);
-    setInterval(function(){
-        if(cambiar==0){
-            $('#flecha').css({'transform':'scale(1.3)','box-shadow':'0px 0px 0px rgba(255, 255, 255, 0)','transition':'all 0.8s'});        
-            cambiar=1;
-        }
-        else{
-            $('#flecha').css({'transform':'scale(1.0)','box-shadow':'0px 0px 5px white','transition':'all 0.8s'});        
-            cambiar=0;
-        }
-    }, 700);
     setInterval(function(){
         if(b==0){
             b=1;
