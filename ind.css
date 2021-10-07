@@ -25,9 +25,11 @@ a{
 }
 #hamburguesa{
     display:block;
+    cursor: pointer;
 }
 #x{
     display:none;
+    cursor: pointer;
 }
 #slider-container{
     width:100%;
@@ -86,7 +88,7 @@ a{
 }
 #menu{
     width:100%;
-    margin-top:-0.5cm;
+    margin-top:9.5cm;
     position:absolute;
     z-index:1;
     animation:animacion1 3s;
@@ -114,7 +116,7 @@ a{
     height:0.8cm;
     padding:10px;
     background:rgb(9, 27, 66);
-    border:1px solid rgb(33, 35, 153);
+    border:1px solid rgb(25, 47, 145);
     border-radius: 5px;
     display:flex;
     justify-content: center;
@@ -130,6 +132,7 @@ a{
     width:100%;
     height:15cm;
     display:flex;
+    border-top: 4px solid rgb(25, 47, 145);
     flex-direction: row;
 }
 #panel1-izquierdo{
@@ -255,7 +258,8 @@ a{
     #menu{
         width:80%;
         position:fixed;
-        top:75px;
+        margin-top: 0;
+        top:56px;
         left:-100%;
         height:calc(100vh - 10px);
         z-index:1;
@@ -296,13 +300,14 @@ a{
     #panel1-container{
         height:100%;
         flex-direction: column;
+        border-top: 0px solid rgb(33, 35, 153);
     }
     #panel1-container>ul{
         width:100%;
         padding-top:1cm;
     }
     #panel1-izquierdo{
-        padding-bottom:1cm;
+        padding:1cm 0px;
     }
     #panel1-derecho{
         padding-bottom:2cm;
