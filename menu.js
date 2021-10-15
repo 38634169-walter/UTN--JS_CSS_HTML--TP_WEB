@@ -20,12 +20,16 @@ function iniciar(){
     $('#x').click(function(){
         ocultar_menu();
     });
-    $('section').click(function(){
-       ocultar_menu(); 
-    });
-    $('footer').click(function(){
-        ocultar_menu(); 
-     });
+    
+    if($(window).width() <= 800){
+        $('section').click(function(){
+           ocultar_menu(); 
+        });
+        
+        $('footer').click(function(){
+            ocultar_menu(); 
+         });
+    }
     
     function mostrar_menu(){
         $('#menu').css({'left':'0%'});
